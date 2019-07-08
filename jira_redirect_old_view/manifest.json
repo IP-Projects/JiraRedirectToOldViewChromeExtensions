@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Jira redirect to old view",
+  "version": "1.0",
+  "description": "Redirects all Jira task views to the old view ",
+  "icons": {
+    "128": "./images/Atlassian_icon_128_Rusted.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "https://*.atlassian.net/"
+  ],
+  "browser_action": {
+    "default_icon": "./images/Atlassian_icon_128_Rusted.png",
+    "default_popup": "popup.html"
+  }
+}
